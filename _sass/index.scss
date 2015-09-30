@@ -1,10 +1,7 @@
-#caption-banner {
-  h2, a {
+#caption-banner, #about-me-container {
+  h2, h3, a {
     color: #DCDCDC;
   }
-  width: 100%;
-  height: 200px;
-  padding: 1rem 1.5rem;;
 }
 
 #contact-icons-container {
@@ -17,7 +14,6 @@
     border-radius: 2em;
     text-align: center;
     i.fa {
-
       top: 50%;
       position: relative;
       transform: translateY(-50%);
