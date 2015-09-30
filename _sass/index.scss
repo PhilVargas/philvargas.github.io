@@ -4,6 +4,20 @@
   }
 }
 
+#projects-container {
+  .image-container {
+    height: 150px;
+    div {
+      top: 50%;
+      position: relative;
+      transform: translateY(-50%);
+    }
+    img {
+      border: 1px solid black;
+    }
+  }
+}
+
 #contact-icons-container {
   .contact-icon {
     display: inline-block;
