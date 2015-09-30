@@ -1,25 +1,25 @@
-#caption-banner, #about-me-container {
-  h2, h3, h4, a {
-    color: #DCDCDC;
-  }
+#projects-header, #about-me-header, #preamble, .contact-icon {
+  &, h4, h2 { color: #DCDCDC; }
 }
 
 #projects-container {
   .image-container {
     height: 150px;
-    div {
+    .project-image {
       top: 50%;
       position: relative;
       transform: translateY(-50%);
-    }
-    img {
-      border: 1px solid black;
+      img {
+        border: 1px solid black;
+      }
     }
   }
 }
 
+
 #contact-icons-container {
   .contact-icon {
+    color: #DCDCDC;
     display: inline-block;
     margin: 0 .25em;
     background-color: #656565;
