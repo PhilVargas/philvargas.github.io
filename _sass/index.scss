@@ -2,6 +2,13 @@
   &, h4, h2 { color: #DCDCDC; }
 }
 
+#resume {
+  margin: 1em 0 0 0;
+  padding-top: 1em;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 #projects-container {
   .image-container {
     height: 150px;
@@ -16,10 +23,15 @@
   }
 }
 
+.v-align {
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+}
 
 #contact-icons-container {
   .contact-icon {
-    color: #DCDCDC;
+    &:hover { color: #333; }
     display: inline-block;
     margin: 0 .25em;
     background-color: #656565;
@@ -27,11 +39,6 @@
     width: 3em;
     border-radius: 2em;
     text-align: center;
-    i.fa {
-      top: 50%;
-      position: relative;
-      transform: translateY(-50%);
-    }
   }
 }
 
