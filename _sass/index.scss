@@ -1,0 +1,52 @@
+#projects-header, #about-me-header, #preamble, .contact-icon, footer {
+  &, h4, h2 { color: #DCDCDC; }
+}
+
+#resume {
+  margin: 1em 0 0 0;
+  padding-top: 1em;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#projects-container {
+  .image-container {
+    height: 150px;
+    .project-image {
+      top: 50%;
+      position: relative;
+      transform: translateY(-50%);
+      img {
+        border: 1px solid black;
+      }
+    }
+  }
+}
+
+.v-align {
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+}
+
+#contact-icons-container {
+  .contact-icon {
+    &:hover { color: #333; }
+    display: inline-block;
+    margin: 0 .25em;
+    background-color: #656565;
+    height: 3em;
+    width: 3em;
+    border-radius: 2em;
+    text-align: center;
+  }
+}
+
+#profile-picture-container {
+  img { border-radius: 250px; }
+}
+
+body {
+  background-image: url("/assets/congruent_outline.png")!important;
+}
+

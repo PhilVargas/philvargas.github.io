@@ -1,1 +1,124 @@
-<div>Hello World</div>
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel='stylesheet' type='text/css' href='css/application.css'>
+    <link rel='stylesheet' type='text/css' href='http://cdn.foundation5.zurb.com/foundation.css'>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <title></title>
+</head>
+<body>
+  <div class="row">
+    <div id='caption-banner' class="large-12 columns">
+        <div class="row">
+          <div class="columns large-9">
+            <div class="row">
+              <div id='preamble'class="columns">
+                <h2>Philip A. Vargas</h2>
+                <h4>Web Developer</h4>
+              </div>
+            </div>
+            <div id='contact-icons-container' class="row">
+              <div class="columns">
+                <a href="{{ site.data.contact_info.githubUrl }}" target="_blank" class='contact-icon'>
+                  <i class="v-align fa fa-2x fa-github"></i>
+                </a>
+                <a href="{{ site.data.contact_info.linkedinUrl }}" target="_blank" class='contact-icon'>
+                  <i class="v-align fa fa-2x fa-linkedin"></i>
+                </a>
+                <a href="{{ site.data.contact_info.stackOverflowUrl }}" target="_blank" class='contact-icon'>
+                  <i class="v-align fa fa-2x fa-stack-overflow"></i>
+                </a>
+                <a href="{{ site.data.contact_info.emailUrl }}" target="_blank" class='contact-icon'>
+                  <i class="v-align fa fa-2x fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="columns">
+                <a href="#" id='resume' class="button secondary small">View Resume</a>
+              </div>
+            </div>
+          </div>
+          <div id='profile-picture-container' class="columns large-3">
+            <img src="/assets/profile.jpg" alt="profile picture">
+          </div>
+        </div>
+      <hr/>
+    </div>
+  </div>
+
+  <div class="row">
+    <div id='about-me-container' class="large-12 columns">
+      <div class="row">
+        <div class="columns">
+          <h3 id='about-me-header'>About Me</h3>
+        </div>
+        <div id='about-me-description' class=" panel columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p></div>
+      </div>
+      <hr/>
+    </div>
+  </div>
+
+  <div id="projects-container">
+    <div class="row">
+      <div class="columns">
+        <h3 id='projects-header'>Personal Projects</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-4 columns panel">
+        <div class="image-container row">
+          <div class="project-image columns">
+            <img src="{{ site.data.external_images.gameOfAfterlife }}"/>
+          </div>
+        </div>
+        <h4>Game of Afterlife</h4>
+        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+      </div>
+      <div class="large-4 columns panel">
+        <div class="image-container row">
+          <div class="project-image columns">
+            <img src="{{ site.data.external_images.tetris }}"/>
+          </div>
+        </div>
+        <h4>Tetris</h4>
+        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+      </div>
+      <div class="large-4 columns panel">
+        <div class="image-container row">
+          <div class="project-image columns">
+            <img src="{{ site.data.external_images.whatsForLunch }}"/>
+          </div>
+        </div>
+        <h4>What's for Lunch?</h4>
+        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr/>
+      <div class="row">
+        <div class="large-6 columns">
+          <p>© Copyright no one at all. Go to town.</p>
+        </div>
+        <div class="large-6 columns">
+          <ul class="inline-list right">
+            <!-- <li><a href="#">Link 1</a></li> -->
+            <!-- <li><a href="#">Link 2</a></li> -->
+            <!-- <li><a href="#">Link 3</a></li> -->
+            <!-- <li><a href="#">Link 4</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
