@@ -10,12 +10,13 @@
 }
 
 #projects-container {
+  .project-container {
+    .project-header { text-align: center; }
+    .project-description { text-align: justify; }
+  }
   .image-container {
     height: 150px;
     .project-image {
-      top: 50%;
-      position: relative;
-      transform: translateY(-50%);
       img {
         border: 1px solid black;
       }
