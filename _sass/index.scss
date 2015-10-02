@@ -1,7 +1,11 @@
 #intro {
+  .header, .contact-icon {
+    color: $smokeText;
+  }
   height: 800px;
   background: url("/assets/congruent_outline.png") repeat center top fixed;
 }
+
 section {
   position: relative;
   width: 100%;
@@ -79,3 +83,6 @@ body {
   background-color: $whiteBackground;
 }
 
+footer {
+  color: $smokeText;
+}
