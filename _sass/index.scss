@@ -3,18 +3,6 @@ section {
   width: 100%;
 }
 
-#about-me {
-  background: $whiteBackground;
-  text-align: center;
-  height: 500px;
-  #about-me-header, #about-me-description { color: #555; }
-}
-
-#about-me-container {
- margin: 100px auto 0 auto;
- hr { margin-top:100px }
-}
-
 .any-text {
   text-shadow:
     -1px -1px 0 #000,
@@ -22,7 +10,6 @@ section {
     -1px 1px 0 #000,
     1px 1px 0 #000;
 }
-
 
 .overlay {
   position: absolute;
@@ -40,7 +27,6 @@ section {
   position: relative;
   transform: translateY(-50%);
 }
-
 
 body {
   background-color: $whiteBackground;
