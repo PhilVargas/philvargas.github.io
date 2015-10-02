@@ -182,31 +182,6 @@
       </div>
     </div>
   </footer>
-<script>
-function test(){
-  $('section').each(function() {
-    var $bgobj = $(this);
-    var $window = $(window);
-    var yPos = ($window.width() > 640 || $window.height() > 438) ? -(($window.scrollTop() - $bgobj.offset().top) / 10) : 0;
-    var coords = '50% '+ yPos + 'px';
-    $bgobj.css({ backgroundPosition: coords });
-  });
-
-  $('.scroll').each(function(){
-    var elementPos, $this, topOfWindow;
-
-    $this = $(this);
-    elementPos = $this.offset().top;
-    topOfWindow = $(window).scrollTop();
-    if (elementPos < topOfWindow+400) {
-      $this.removeClass('scroll').addClass("animated " + $this.data('animate'));
-    }
-  });
-}
-  $(document).on('ready', function(){
-    test();
-    $(window).on('scroll', test);
-  });
-</script>
+  <script src='/assets/javascripts/application.js'></script>
 </body>
 </html>
