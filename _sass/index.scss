@@ -44,6 +44,12 @@ section {
 
 body {
   background-color: $whiteBackground;
+  * {
+    .fa {
+      font-family: FontAwesome!important;
+    }
+    font-family: Roboto!important;
+  }
 }
 
 footer {
