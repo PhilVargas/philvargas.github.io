@@ -1,0 +1,28 @@
+#projects {
+  height: 900px;
+  text-align: center;
+  background: url(/assets/vinyl-wallpaper.png) no-repeat center top fixed;
+  background-size: 100%;
+}
+
+#projects-container {
+  margin: 0 auto;
+  padding-top: 180px;
+  hr { margin-top:100px }
+
+  .header { color: $smokeText; }
+
+  .project-container {
+    .project-header { color: $smokeText }
+    .project-description { text-align: justify; }
+  }
+  .image-container {
+    &:hover .overlay { display:none; }
+    height: 150px;
+    .project-image {
+      img {
+        border: 1px solid black;
+      }
+    }
+  }
+}
