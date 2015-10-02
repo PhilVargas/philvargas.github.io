@@ -1,5 +1,9 @@
+$smokeText: #DCDCDC;
+$greyText: #555;
+$whiteBackground: #f3f3f3;
 #intro {
   height: 800px;
+  background: url("/assets/congruent_outline.png") repeat center top fixed;
 }
 section {
   position: relative;
@@ -8,7 +12,7 @@ section {
 }
 
 #about-me {
-  background: #f3f3f3;
+  background: $whiteBackground;
   text-align: center;
   height: 500px;
   #about-me-header, #about-me-description { color: #555; }
@@ -17,10 +21,20 @@ section {
 #projects {
   height: 900px;
   text-align: center;
+  background: url(/assets/vinyl-wallpaper.png) no-repeat center top fixed;
+  background-size: 100%;
+}
+
+.any-text {
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 #projects-header, #preamble, .contact-icon, footer {
-  &, h4, h2 { color: #DCDCDC; }
+  &, h4, h2 { color: $smokeText; }
 }
 
 #caption-banner {
@@ -46,12 +60,24 @@ section {
   font-weight: bold;
 }
 
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.70);
+  z-index: 5;
+  color: $smokeText;
+}
+
 #projects-container {
   .project-container {
-    .project-header { text-align: center; }
+    .project-header { color: $smokeText }
     .project-description { text-align: justify; }
   }
   .image-container {
+    &:hover .overlay { display:none; }
     height: 150px;
     .project-image {
       img {
@@ -85,6 +111,6 @@ section {
 }
 
 body {
-  background-image: url("/assets/congruent_outline.png")!important;
+  background-color: $whiteBackground;
 }
 

@@ -62,7 +62,13 @@
           <div class="columns">
             <h3 id='about-me-header'>About Me</h3>
           </div>
-          <div id='about-me-description' class=" panel columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p></div>
+          <div id='about-me-description' class=" panel columns">
+            <p>
+              Heres some stuff about me. it will probably be some professional stuff like what
+              languages i use, but also some personal hobbies of mine. maybe talk about how OSS isnt
+              so intimidating anymore, yada yada.
+            </p>
+          </div>
         </div>
         <hr/>
       </div>
@@ -73,20 +79,22 @@
   <div id="projects-container" class='scroll' data-animate='fadeIn'>
     <div class="row">
       <div class="columns">
-        <h3 id='projects-header'>Personal Projects</h3>
+        <h3 id='projects-header' class='any-text'>Personal Projects</h3>
       </div>
     </div>
 
     <div class="row">
       <div class="large-4 columns project-container panel scroll" data-animate='fadeInLeft'>
-        <div class="image-container row">
-          <div class="project-image columns v-align">
-            <img src="{{ site.data.external_images.gameOfAfterlife }}"/>
+        <a href="{{ site.data.project_links.gameOfAfterlife }}" target="_blank">
+          <div class="image-container row collapse">
+            <div class="project-image columns v-align">
+              <div class="overlay"><h3 class='v-align project-header'>Game of Afterlife</h3></div>
+              <img src="{{ site.data.external_images.gameOfAfterlife }}"/>
+            </div>
           </div>
-        </div>
+        </a>
         <div class="row">
           <div class="columns">
-            <h4 class='project-header'>Game of Afterlife</h4>
             <p class='project-description'>
               With its inception during a hackathon, Game of Afterlife is a new take on Conway's
               Game of Life -- Zombie Edition. Version 2.0 saw the introduction of a controllable player,
@@ -99,14 +107,16 @@
         </div>
       </div>
       <div class="large-4 columns project-container panel scroll" data-animate='fadeInLeft'>
-        <div class="image-container row">
-          <div class="project-image columns v-align">
-            <img src="{{ site.data.external_images.tetris }}"/>
+        <a href="{{ site.data.project_links.tetris }}" target="_blank">
+          <div class="image-container row collapse">
+            <div class="project-image columns v-align">
+              <div class="overlay"><h3 class='v-align project-header'>Tetris</h3></div>
+              <img src="{{ site.data.external_images.tetris }}"/>
+            </div>
           </div>
-        </div>
+        </a>
         <div class="row">
           <div class="columns">
-            <h4 class='project-header'>Tetris</h4>
             <p class='project-description'>
               Fully functional in-browser Tetris game. Contains all the classic features such as
               movement, rotation, next piece, hold piece, and scoring. It also includes modern
@@ -119,14 +129,16 @@
         </div>
       </div>
       <div class="large-4 columns project-container panel scroll" data-animate='fadeInLeft'>
-        <div class="image-container row">
-          <div class="project-image columns v-align">
-            <img src="{{ site.data.external_images.whatsForLunch }}"/>
+        <a href="{{ site.data.project_links.whatsForLunch }}" target="_blank">
+          <div class="image-container row collapse">
+            <div class="project-image columns v-align">
+              <div class="overlay"><h3 class='v-align project-header'>What's for Lunch?</h3></div>
+              <img src="{{ site.data.external_images.whatsForLunch }}"/>
+            </div>
           </div>
-        </div>
+        </a>
         <div class="row">
           <div class="columns">
-            <h4 class='project-header'>What's for Lunch?</h4>
             <p class='project-description'>
               With its inception during a hackathon, Game of Afterlife 2.0 is a new take on Conway's
               Game of Life -- Zombie Edition. Version 2.0 saw the introduction of a controllable player,
@@ -145,7 +157,7 @@
     <div class="large-12 columns">
       <hr/>
       <div class="row">
-        <div class="large-6 columns">
+        <div class="large-6 columns any-text">
           <p>© Copyright no one at all. Go to town.</p>
         </div>
         <div class="large-6 columns">
@@ -161,17 +173,24 @@
   </footer>
 <script>
 function test(){
+  $('section').each(function() {
+    var $bgobj = $(this);
+    var $window = $(window);
+    var yPos = ($window.width() > 640 || $window.height() > 438) ? -(($window.scrollTop() - $bgobj.offset().top) / 10) : 0;
+    var coords = '50% '+ yPos + 'px';
+    $bgobj.css({ backgroundPosition: coords });
+  });
 
-    $('.scroll').each(function(){
-      var elementPos, $this, topOfWindow;
+  $('.scroll').each(function(){
+    var elementPos, $this, topOfWindow;
 
-      $this = $(this);
-      elementPos = $this.offset().top;
-      topOfWindow = $(window).scrollTop();
-      if (elementPos < topOfWindow+400) {
-        $this.removeClass('scroll').addClass("animated " + $this.data('animate'));
-      }
-    });
+    $this = $(this);
+    elementPos = $this.offset().top;
+    topOfWindow = $(window).scrollTop();
+    if (elementPos < topOfWindow+400) {
+      $this.removeClass('scroll').addClass("animated " + $this.data('animate'));
+    }
+  });
 }
   $(document).on('ready', function(){
     test();

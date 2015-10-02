@@ -1,5 +1,5 @@
 @for $project from 1 to 4 {
-  $initialDelay: 0.25;
+  $initialDelay: 0;
   #projects-container {
     .project-container:nth-child(#{$project}) {
         animation-duration: 1s;
