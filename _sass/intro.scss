@@ -1,24 +1,20 @@
 #intro {
+  height: 700px;
+  background: url("/assets/congruent_outline.png") repeat center top fixed;
+
   .header, .contact-icon {
     color: $smokeText;
   }
-  height: 800px;
-  background: url("/assets/congruent_outline.png") repeat center top fixed;
-}
+  .banner hr {
+    margin-top:100px
+  }
+  .button {
+    margin: 1em 0 0 0;
+    padding-top: 1em;
+    font-size: 14px;
+    font-weight: bold;
+  }
 
-#caption-banner {
- margin: 200px auto 0 auto;
- hr { margin-top:100px }
-}
-
-#resume {
-  margin: 1em 0 0 0;
-  padding-top: 1em;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-#contact-icons-container {
   .contact-icon {
     &:hover { color: #333; }
     display: inline-block;
@@ -29,8 +25,6 @@
     border-radius: 2em;
     text-align: center;
   }
-}
 
-#profile-picture-container {
   img { border-radius: 250px; }
 }
