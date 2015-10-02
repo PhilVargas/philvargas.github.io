@@ -1,0 +1,30 @@
+#intro {
+  height: 700px;
+  background: url("/assets/images/congruent_outline.png") repeat center top fixed;
+
+  .header, .contact-icon {
+    color: $smokeText;
+  }
+  .banner hr {
+    margin-top:100px
+  }
+  .button {
+    margin: 1em 0 0 0;
+    padding-top: 1em;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .contact-icon {
+    &:hover { color: #333; }
+    display: inline-block;
+    margin: 0 .25em;
+    background-color: #656565;
+    height: 3em;
+    width: 3em;
+    border-radius: 2em;
+    text-align: center;
+  }
+
+  img { border-radius: 250px; }
+}

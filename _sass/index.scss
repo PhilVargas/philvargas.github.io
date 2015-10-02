@@ -1,28 +1,6 @@
-$smokeText: #DCDCDC;
-$greyText: #555;
-$whiteBackground: #f3f3f3;
-#intro {
-  height: 800px;
-  background: url("/assets/congruent_outline.png") repeat center top fixed;
-}
 section {
   position: relative;
   width: 100%;
-  max-width: 1500px;
-}
-
-#about-me {
-  background: $whiteBackground;
-  text-align: center;
-  height: 500px;
-  #about-me-header, #about-me-description { color: #555; }
-}
-
-#projects {
-  height: 900px;
-  text-align: center;
-  background: url(/assets/vinyl-wallpaper.png) no-repeat center top fixed;
-  background-size: 100%;
 }
 
 .any-text {
@@ -31,33 +9,6 @@ section {
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
-}
-
-#projects-header, #preamble, .contact-icon, footer {
-  &, h4, h2 { color: $smokeText; }
-}
-
-#caption-banner {
- margin: 200px auto 0 auto;
- hr { margin-top:100px }
-}
-
-#about-me-container {
- margin: 100px auto 0 auto;
- hr { margin-top:100px }
-}
-
-#projects-container {
- margin: 0 auto;
- padding-top: 180px;
- hr { margin-top:100px }
-}
-
-#resume {
-  margin: 1em 0 0 0;
-  padding-top: 1em;
-  font-size: 14px;
-  font-weight: bold;
 }
 
 .overlay {
@@ -71,46 +22,19 @@ section {
   color: $smokeText;
 }
 
-#projects-container {
-  .project-container {
-    .project-header { color: $smokeText }
-    .project-description { text-align: justify; }
-  }
-  .image-container {
-    &:hover .overlay { display:none; }
-    height: 150px;
-    .project-image {
-      img {
-        border: 1px solid black;
-      }
-    }
-  }
-}
-
 .v-align {
   top: 50%;
   position: relative;
   transform: translateY(-50%);
 }
 
-#contact-icons-container {
-  .contact-icon {
-    &:hover { color: #333; }
-    display: inline-block;
-    margin: 0 .25em;
-    background-color: #656565;
-    height: 3em;
-    width: 3em;
-    border-radius: 2em;
-    text-align: center;
-  }
-}
-
-#profile-picture-container {
-  img { border-radius: 250px; }
-}
-
 body {
   background-color: $whiteBackground;
+  * {
+    .fa {
+      font-family: FontAwesome!important;
+    }
+    font-family: Roboto!important;
+  }
 }
 
