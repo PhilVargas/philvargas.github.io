@@ -1,0 +1,16 @@
+@for $project from 1 to 4 {
+  $initialDelay: 0;
+  #projects-container {
+    .project-container:nth-child(#{$project}) {
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        animation-delay: #{($project - 1) * 0.45 + $initialDelay}s;
+        -webkit-animation-delay: #{($project - 1) * 0.45 + $initialDelay}s;
+        -moz-animation-delay: #{($project - 1) * 0.45 + $initialDelay}s;
+    }
+  }
+}
+
+.scroll { visibility: hidden; }
+.animate { visibility: visible!important; }
