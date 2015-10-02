@@ -1,12 +1,11 @@
 #about-me {
   background: $whiteBackground;
   text-align: center;
-  height: 500px;
-  .descritption { color: #555; }
-
+  height: 700px;
+  .description { color: #555; }
   .container {
-  margin: 100px auto 0 auto;
-  hr { margin-top:100px }
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 
