@@ -2,7 +2,12 @@
   background: $whiteBackground;
   text-align: center;
   height: 700px;
-  .description { color: #555; }
+  .description {
+    color: #555;
+    p {
+      font-size: 20px;
+    }
+  }
   .container {
     padding-top: 100px;
     padding-bottom: 100px;
