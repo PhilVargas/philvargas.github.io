@@ -22,10 +22,20 @@ section {
   color: $smokeText;
 }
 
-.v-align {
-  top: 50%;
-  position: relative;
-  transform: translateY(-50%);
+@media screen and (max-width: $phone) {
+  .v-align-small {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .v-align {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+  }
 }
 
 body {

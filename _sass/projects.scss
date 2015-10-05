@@ -1,8 +1,8 @@
 #projects {
-  height: 900px;
+  height: 56em;
   text-align: center;
   background: url(/assets/images/vinyl-wallpaper.png) no-repeat center top fixed;
-  background-size: 100%;
+  background-size: cover;
 
   .container {
     .header { color: $smokeText; }
@@ -13,10 +13,15 @@
     }
     .image-container {
       &:hover .overlay { display:none; }
-      height: 150px;
       .project-image img{
         border: 1px solid black;
       }
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    .container .image-container {
+      height: 150px;
     }
   }
 }
