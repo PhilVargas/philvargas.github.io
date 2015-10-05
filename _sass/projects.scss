@@ -20,3 +20,7 @@
     }
   }
 }
+
+@media screen and (max-width: $phone) {
+  #projects { display: none; }
+}
