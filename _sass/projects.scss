@@ -15,7 +15,7 @@
     }
     .image-container {
       height: 150px;
-      &:hover .overlay { display:none; }
+      &:hover .overlay { display:none!important; }
       .project-image img{
         border: 1px solid black;
       }
@@ -24,7 +24,5 @@
 
   @media screen and (max-width: $phone) {
     height: 120em;
-    .container .image-container {
-    }
   }
 }
