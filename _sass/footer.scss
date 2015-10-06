@@ -1,0 +1,13 @@
+footer {
+  .contact-icon {
+    &:hover { color: #333; }
+    i { font-size: 2em; }
+  }
+
+  @media screen and (max-width: $phone) {
+    .contact-icon {
+      i { font-size: 3em; }
+      margin: 0 1rem;
+    }
+  }
+}
