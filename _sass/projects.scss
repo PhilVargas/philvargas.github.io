@@ -5,13 +5,16 @@
   background-size: cover;
 
   .container {
-    .header { color: $smokeText; }
+    .header {
+      color: $smokeText;
+    }
 
     .project-container {
       .project-header { color: $smokeText }
       .project-description { text-align: justify; }
     }
     .image-container {
+      height: 150px;
       &:hover .overlay { display:none; }
       .project-image img{
         border: 1px solid black;
@@ -19,9 +22,9 @@
     }
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (max-width: $phone) {
+    height: 120em;
     .container .image-container {
-      height: 150px;
     }
   }
 }
