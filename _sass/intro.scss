@@ -1,5 +1,5 @@
 #intro {
-  height: 700px;
+  height: 44em;
   background: url("/assets/images/congruent_outline.png") repeat center top fixed;
 
   .header, .contact-icon {
@@ -17,6 +17,7 @@
 
   .contact-icon {
     &:hover { color: #333; }
+    i { font-size: 2em; }
     display: inline-block;
     margin: 0 .25em;
     background-color: #656565;
@@ -26,11 +27,21 @@
     text-align: center;
   }
 
-  img { border-radius: 250px; }
+  img { border-radius: 1000px; }
 
   @media screen and (max-width: $phone) {
-    height: 44em;
+    height: 80em;
     text-align: center;
     .description { margin-top: 20px; }
+    .contact-icon {
+      i { font-size: 3em; }
+      display: inline-block;
+      margin: 0 .25em;
+      background-color: #656565;
+      height: 5em;
+      width: 5em;
+      border-radius: 5em;
+      text-align: center;
+    }
   }
 }

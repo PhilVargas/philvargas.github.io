@@ -8,6 +8,10 @@
       font-size: 20px;
     }
   }
+  @media screen and (max-width: $phone) {
+    font-size: 24px;
+    height: 60em;
+  }
 }
 
 
