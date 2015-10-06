@@ -5,7 +5,7 @@ parallaxBackground = ->
   $('section').each ->
     $bgobj = $(this)
     $window = $(window)
-    if ($window.width() > 640 && $window.height() > 438)
+    if ($window.width() > 1024)
       yPos = -(($window.scrollTop() - $bgobj.offset().top) / 10)
     else
       yPos = 0
@@ -23,7 +23,7 @@ animateOnScroll = ->
 
 $(document).on 'ready', ->
   $window = $(window)
-  if $window.width() > 640
+  if $window.width() > 1024
     $(window).on 'scroll', ->
       parallaxBackground()
       animateOnScroll()
