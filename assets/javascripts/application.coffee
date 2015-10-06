@@ -18,7 +18,7 @@ animateOnScroll = ->
     $this = $(this)
     elementPos = $this.offset().top
     topOfWindow = $(window).scrollTop()
-    if elementPos < topOfWindow+400
+    if elementPos < topOfWindow + 400
       $this.removeClass('scroll').addClass("animated #{$this.data('animate')}")
 
 $(document).on 'ready', ->
