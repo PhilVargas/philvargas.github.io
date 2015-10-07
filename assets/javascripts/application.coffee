@@ -24,6 +24,8 @@ animateOnScroll = ->
 $(document).on 'ready', ->
   $window = $(window)
   if $window.width() > 1024
+    animateOnScroll()
+    parallaxBackground()
     $(window).on 'scroll', ->
       parallaxBackground()
       animateOnScroll()
