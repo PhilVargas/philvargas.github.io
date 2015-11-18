@@ -1,6 +1,17 @@
 #intro {
+  #intro-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .35);
+  }
+  .intro-container { z-index: 2; }
+  position: relative;
   height: 44em;
-  background: url("/assets/images/congruent_outline.png") repeat center top fixed;
+  background: url("/assets/images/code_wall.png") 0px 0px no-repeat fixed;
+  background-size: cover;
 
   .header, .contact-icon {
     color: $smokeText;
@@ -13,9 +24,11 @@
     padding-top: 1em;
     font-size: 14px;
     font-weight: bold;
+    border: 1px solid black;
   }
 
   .contact-icon {
+    border: 1px solid black;
     &:hover { color: #333; }
     i { font-size: 2em; }
     display: inline-block;
